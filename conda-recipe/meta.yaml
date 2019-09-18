@@ -20,6 +20,8 @@ requirements:
 
   run:
     - python
+    - ipython
+    - nord-pygments
   
   test:
     - pytest
@@ -30,5 +32,4 @@ about:
   license: {{ data["license"] }}
   license_file: LICENSE
   summary: {{ data["description"] }}
-  doc_url: {{ data["project_urls"]["Documentation"] }}
   dev_url: {{ data["project_urls"]["Source"] }}

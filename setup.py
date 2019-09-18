@@ -23,7 +23,7 @@ def read_readme():
 
 setup_requirements = ["pip", "setuptools", "wheel"]
 
-install_requirements = []
+install_requirements = ["ipython", "nord-pygments"]
 
 lint_requirements = [
     "flake8",
@@ -36,7 +36,7 @@ lint_requirements = [
     "pep8-naming",
 ]
 
-test_requirements = ["pytest", "pytest-cov", "importlib_metadata; python_version<'3.8'"]
+test_requirements = ["pytest", "pytest-cov"]
 
 dev_requirements = (
     ["ipython", "black", "rope", "pre-commit"] + lint_requirements + test_requirements
@@ -67,7 +67,6 @@ if __name__ == "__main__":
         project_urls={
             "Trackers": about["__bugtracker_url__"],
             "Source": about["__source_url__"],
-            "Documentation": about["__docs_url__"],
         },
         setup_requires=setup_requirements,
         tests_require=test_requirements,

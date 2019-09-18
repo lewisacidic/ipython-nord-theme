@@ -22,8 +22,7 @@ __copyright__ = "Copyright (c) 2019 Rich Lewis"
 __author__ = "Rich Lewis"
 __author_email__ = "opensource@richlew.is"
 
-__url__ = "https://lewisacidic.github.io/ipython-nord-theme"
-__docs_url__ = "https://lewisacidic.github.io/ipython-nord-theme/docs"
+__url__ = "https://github.com/lewisacidic/ipython-nord-theme"
 __source_url__ = "https://github.com/lewisacidic/ipython-nord-theme"
 __bugtracker_url__ = "https://github.com/lewisacidic/ipython-nord-theme/issues"
 __download_url__ = "https://github.com/lewisacidic/ipython-nord-theme/releases"
@@ -41,12 +40,10 @@ __keywords__ = ["ipython", "theme", "nord"]
 __all__ = [
     "__author__",
     "__author_email__",
-    "__bugtracker_url__",
     "__classifiers__",
     "__copyright__",
     "__description__",
     "__distname__",
-    "__docs_url__",
     "__download_url__",
     "__keywords__",
     "__license__",
