@@ -1,0 +1,34 @@
+{% set data = load_setup_py_data(setup_file="../setup.py", from_recipe_dir=True) %}
+
+package:
+  name: {{ data.get("name") }}
+  version: {{ data.get("version") }}
+
+source:
+  path: ../
+
+build:
+  noarch: python
+  number: 0
+  script: python -m pip install --no-deps --ignore-installed .
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - wheel
+
+  run:
+    - python
+  
+  test:
+    - pytest
+    - pytest-cov
+
+about:
+  home: {{ data["url"] }}
+  license: {{ data["license"] }}
+  license_file: LICENSE
+  summary: {{ data["description"] }}
+  doc_url: {{ data["project_urls"]["Documentation"] }}
+  dev_url: {{ data["project_urls"]["Source"] }}

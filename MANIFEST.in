@@ -1,0 +1,2 @@
+include README.md LICENSE versioneer.py
+recursive-include src *.py

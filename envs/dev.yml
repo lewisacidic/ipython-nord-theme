@@ -1,0 +1,25 @@
+name: ipython-nord-theme-dev
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - black
+  - flake8
+  - flake8-builtins
+  - flake8-mutable
+  - flake8-docstrings
+  - ipython
+  - pep8-naming
+  - pip
+  - pre-commit
+  - python>=3
+  - pytest
+  - pytest-cov
+  - rope
+  - twine
+  - pip:
+      - flake8-bandit
+      - flake8-bugbear
+      - flake8-logging-format
+      - flake8-print
+      - -e..

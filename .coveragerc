@@ -1,0 +1,6 @@
+[run]
+omit =
+    # omit versioneer scripts
+    versioneer.py
+    src/ipython_nord_theme/_version.py
+
