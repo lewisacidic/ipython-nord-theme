@@ -8,15 +8,12 @@ source:
   path: ../
 
 build:
-  noarch: python
-  number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
-    - wheel
+    - pip
 
   run:
     - python
