@@ -51,10 +51,14 @@ if __name__ == "__main__":
         cmdclass=versioneer.get_cmdclass(),
         description=about["__description__"],
         download_url=about["__download_url__"],
+        entry_points={
+            "ipython_startup_hook": "ipython_nord_theme = ipython_nord_theme.startup:load"
+        },
         extras_require={
             "lint": lint_requirements,
             "dev": dev_requirements,
             "test": test_requirements,
+            "hook": ["ipython-startup-hook"],
         },
         install_requires=install_requirements,
         keywords=about["__keywords__"],
