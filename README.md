@@ -9,6 +9,7 @@ To easily get the theme installed and loading at startup:
 
 ```shell
 pip install ipython_nord_theme[hook]
+python -m ipython_startup_hook.install
 ```
 
 
