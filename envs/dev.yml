@@ -1,8 +1,10 @@
 name: ipython-nord-theme-dev
 channels:
+  - lewisacidic
   - defaults
   - conda-forge
 dependencies:
+  - nord-pygments
   - black
   - flake8
   - flake8-builtins
